@@ -4,80 +4,77 @@ import Perfil from "./Perfil.js";
 
 const Menu = () => {
   return (
-    <div className="container">
-      <div className="row pt-1 ">
-        <div className="col-4 bg-primary">
-          <Perfil />
-        </div>
-        <div className="col-7 ">
-          <section className=" bg-warning">
-            <Outlet />
-          </section>
-        </div>
-
-        <div className="col-1 bg-danger d-flex pt-2 pb-2 justify-content-center  align-items-center ">
-          <div className="bg-dark nav ">
-            <ul className="list-ul">
-              <li className="list-li ">
-                <NavLink
-                  className={({ isActive }) => (isActive ? "isActive" : "")}
-                  to="Home"
-                >
-                  <span className="icon" style={{ "--clr": "#f44336 " }}>
-                    {/* home */}
-                    <i className="bi bi-house-fill" />
-                  </span>
-                </NavLink>
-              </li>
-              <li className="list-li">
-                <NavLink
-                  className={({ isActive }) => (isActive ? "isActive" : "")}
-                  to="/About"
-                >
-                  {/* About */}
-                  <span className="icon" style={{ "--clr": "#2196f3 " }}>
-                    <i className=" bi bi-person-circle" />
-                  </span>
-                </NavLink>
-              </li>
-              <li className="list-li">
-                <NavLink
-                  className={({ isActive }) => (isActive ? "isActive" : "")}
-                  to="/Proyecto"
-                >
-                  <span className="icon" style={{ "--clr": "#e91e63 " }}>
-                    {/* Proyecto */}
-                    <i className="bi bi-folder-symlink-fill" />
-                  </span>
-                </NavLink>
-              </li>
-              <li className="list-li">
-                <NavLink
-                  className={({ isActive }) => (isActive ? "isActive" : "")}
-                  to="/Estudios"
-                >
-                  <span className="icon" style={{ "--clr": "#ffc107" }}>
-                    {/* Estudios */}
-                    <i className="bi bi-mortarboard-fill" />
-                  </span>
-                </NavLink>
-              </li>
-              <li className="list-li">
-                <NavLink
-                  className={({ isActive }) => (isActive ? "isActive" : "")}
-                  to="/Contacto"
-                >
-                  <span className="icon " style={{ "--clr": "#97dc47" }}>
-                    {/* Contacto */}
-                    <i className="bi bi-envelope-fill" />
-                  </span>
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+    <nav className=" navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+          Navbar
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 font-Wendy ">
+            <li className="nav-item">
+              <a className="nav-link active " aria-current="page" href="#">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Link
+              </a>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <select>
+            <option>Es</option>
+            <option>EN</option>
+          </select>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
