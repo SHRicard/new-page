@@ -7,7 +7,7 @@ const Menu = () => {
     <nav className=" navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Navbar
+          LOGO
         </a>
         <button
           className="navbar-toggler"
@@ -21,15 +21,20 @@ const Menu = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0 font-Wendy ">
-            <li className="nav-item">
-              <a className="nav-link active " aria-current="page" href="#">
+          <ul className="navbar-nav m-auto  mb-lg-0 font-Roboto  ">
+            <li className="nav-item ">
+              <a className="nav-link active  " aria-current="page" href="#">
                 Home
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Link
+                Sobre Mi
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Contactame
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -41,17 +46,17 @@ const Menu = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Proyectos
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a className="dropdown-item" href="#">
-                    Action
+                    Pokemon
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
+                  <a className="dropdown-item " href="#">
+                    Pais
                   </a>
                 </li>
                 <li>
@@ -59,7 +64,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    E-Commerce
                   </a>
                 </li>
               </ul>
@@ -68,8 +73,12 @@ const Menu = () => {
               <a className="nav-link disabled">Disabled</a>
             </li>
           </ul>
-          <select>
-            <option>Es</option>
+          <input type="radio" name="theme" id="light" value="light" />
+          <label htmlFor="light">Claro</label>
+          <input type="radio" name="theme" id="dark" value="dark" />
+          <label htmlFor="dark">Oscuro</label>
+          <select className="font-Roboto">
+            <option>ES</option>
             <option>EN</option>
           </select>
         </div>
