@@ -1,8 +1,10 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import ThemeContext from "../Context/ThemeContext.js";
 const Footer = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div>
+    <div className={theme}>
       <div className="row d-flex justify-content-center bg-danger">
         <div className="col-4 text-center font-Roboto">
           <h3>Logo</h3>
