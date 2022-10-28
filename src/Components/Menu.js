@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext from "../Context/ThemeContext.js";
-import ThemeButton from "../Components/ThemeButton.js";
-
 import { NavLink, Outlet } from "react-router-dom";
-import Perfil from "./Perfil.js";
 
 const Menu = () => {
   const { theme, haldleTheme } = useContext(ThemeContext);
@@ -38,7 +35,7 @@ const Menu = () => {
                   Sobre Mi
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="">
                 <a className="nav-link" href="#">
                   Contactame
                 </a>
@@ -75,31 +72,33 @@ const Menu = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
-              </li>
             </ul>
-            <input
-              type="radio"
-              name="theme"
-              onClick={haldleTheme}
-              id="theme-Sun"
-              value="theme-Sun"
-            />
-            <label htmlFor="theme-Sun">Claro</label>
-            <input
-              type="radio"
-              name="theme"
-              onClick={haldleTheme}
-              id="theme-Moon"
-              value="theme-Moon"
-            />
-            <label htmlFor="theme-Moon">Oscuro</label>
 
             <select className="font-Roboto">
               <option>ES</option>
               <option>EN</option>
             </select>
+
+            <button
+              onClick={haldleTheme}
+              id="theme-Sun"
+              value="theme-Sun"
+              name="theme"
+              type="button"
+              class="btn btn-light"
+            >
+              Light
+            </button>
+            <button
+              name="theme"
+              onClick={haldleTheme}
+              id="theme-Moon"
+              value="theme-Moon"
+              type="button"
+              class="btn btn-dark"
+            >
+              Dark
+            </button>
           </div>
         </div>
       </nav>

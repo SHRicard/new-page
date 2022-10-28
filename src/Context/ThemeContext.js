@@ -11,7 +11,6 @@ const ThemeProvaider = ({ children }) => {
     if (localStorage.getItem("theme")) {
       setTheme("theme");
     }
-
     if (e.target.value === "theme-Sun") {
       setTheme("theme-Sun");
       localStorage.setItem("theme", e.target.value);

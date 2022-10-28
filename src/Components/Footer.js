@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <div className={theme}>
-      <div className="row d-flex justify-content-center bg-danger">
+      <div className="row d-flex justify-content-center">
         <div className="col-4 text-center font-Roboto">
           <h3>Logo</h3>
           <p>Parrafo</p>
