@@ -2,27 +2,27 @@ import { createContext, useState } from "react";
 
 const ThemeContext = createContext();
 
-const initialState = "theme-Sun";
+const initialState = localStorage.getItem("theme");
 
 const ThemeProvaider = ({ children }) => {
   const [theme, setTheme] = useState(initialState);
 
-  guardar_localstorage();
-
-  function guardar_localstorage() {
-    let persona = {
-      nombre: "ricardo   ",
-      edad: "31",
-    };
-    let nombre = "pedro";
-    localStorage.setItem("nombre", nombre);
-  }
-
   const haldleTheme = (e) => {
+    if (localStorage.getItem("theme")) {
+      setTheme("theme");
+    }
+
     if (e.target.value === "theme-Sun") {
-      setTheme("light");
+      setTheme("theme-Sun");
+      localStorage.setItem("theme", e.target.value);
+      let elejido = localStorage.getItem("theme");
+      console.log(elejido);
     } else {
       setTheme("theme-Moon");
+      localStorage.setItem("theme", e.target.value);
+      let elejido = localStorage.getItem("theme");
+
+      console.log(elejido);
     }
   };
 

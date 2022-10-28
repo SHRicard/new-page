@@ -6,10 +6,26 @@ font-weight: 600
 
 };
 
+
+
+
+
 .theme-Moon{
 color:#64ff66;
 background: #eb0808;
 }
 .theme-Sun{
 
+}
+
+
+
+#toggle
+{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 30px;
+    border-radius: 160px;
+    background: #222;
 }

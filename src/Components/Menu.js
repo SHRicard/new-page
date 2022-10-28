@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext from "../Context/ThemeContext.js";
+import ThemeButton from "../Components/ThemeButton.js";
 
 import { NavLink, Outlet } from "react-router-dom";
 import Perfil from "./Perfil.js";
@@ -84,7 +85,6 @@ const Menu = () => {
               onClick={haldleTheme}
               id="theme-Sun"
               value="theme-Sun"
-              checked
             />
             <label htmlFor="theme-Sun">Claro</label>
             <input
@@ -95,6 +95,7 @@ const Menu = () => {
               value="theme-Moon"
             />
             <label htmlFor="theme-Moon">Oscuro</label>
+
             <select className="font-Roboto">
               <option>ES</option>
               <option>EN</option>
