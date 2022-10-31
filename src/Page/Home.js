@@ -8,16 +8,20 @@ import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <ThemeProvaider>
-      <div className="row">
-        <Entrada />
-        <Menu />
-        <div className="col-4">
-          <Perfil />
+      <div className="container-fluid">
+        <div className="row">
+          <Entrada />
+          <div className="">
+            <Menu />
+          </div>
+          <div className="col-auto bg-primary pt-5 pb-5">
+            <Perfil />
+          </div>
+          <div className="col bg-danger">
+            <Contenido />
+          </div>
+          <Footer />
         </div>
-        <div className="col">
-          <Contenido />
-        </div>
-        <Footer />
       </div>
     </ThemeProvaider>
   );
