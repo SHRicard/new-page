@@ -7,13 +7,13 @@ const Menu = () => {
 
   return (
     <div className={theme}>
-      <nav className=" navbar navbar-expand-lg navbar-light bg-light">
+      <nav className=" menu navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             LOGO
           </a>
           <button
-            className="navbar-toggler"
+            className="botton-toggel-menu  navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -21,10 +21,16 @@ const Menu = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon " />
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto  mb-lg-0 font-Roboto  ">
+          <div
+            className=" collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul
+              className="navbar-nav m-auto  mb-lg-0
+            "
+            >
               <li className="nav-item ">
                 <a className="nav-link active  " aria-current="page" href="#">
                   Home
@@ -51,7 +57,10 @@ const Menu = () => {
                 >
                   Proyectos
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul
+                  className="select dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                >
                   <li>
                     <a className="dropdown-item" href="#">
                       Pokemon

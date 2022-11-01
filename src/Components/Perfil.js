@@ -1,45 +1,50 @@
-import React from "react";
+import React, { useContext } from "react";
+import RRaamirez from "../Img/RRamirez.png";
+import ThemeContext from "../Context/ThemeContext.js";
 
 const Perfil = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="container">
-      <div className="card d-flex align-items-center">
-        <div className="imgBox ">
-          <img src="#" alt="noImg" />
-        </div>
-        <div className="content">
-          <div className="details font-Roboto">
-            <h2 className="name  ">Ramirez Ricardo</h2>
-            <span className="web font-Roboto">
-              Desarrollador Junior <br />
-              <span className="font-Racing fs-5"> Front-End / Back-End</span>
-            </span>
-            <div className="data row">
-              <div className="col-4 ">
-                <h3 className="number font-Roboto">5</h3>
-
-                <span className="span-opa font-Roboto ">Proyectos</span>
+    <div className={theme}>
+      <div className="container-card pt-2">
+        <div className="card">
+          <div className="boxImg">
+            <img src="..." className=" rounded float-start" alt="..." />
+          </div>
+          <div className="dato">
+            <div
+              className="row text-center d-flex
+                justify-content-center"
+            >
+              <div className="col-12 text-center  ">
+                <h3 className="titleName fs-2"> Ricardo</h3>
+                <small>Desarrollador Back-End / Front-End</small>
               </div>
-              <div className="col-4">
-                <h3 className="number font-Roboto ">50</h3>
-
-                <span className=" span-opa font-Roboto p-0">Repositorio</span>
+              <div className="col-auto ">
+                <span>500</span>
+                <br />
+                <small>commits</small>
               </div>
-              <div className="col-4">
-                <h3 className="number font-Roboto">500</h3>
-
-                <span className=" span-opa  font-Roboto">Commits</span>
+              <div className="col-auto">
+                <span>500</span>
+                <br />
+                <small>commits</small>
               </div>
-            </div>
-            <div className="row ">
-              <div className="col-6 pt-3">
-                <button type="button" class="btn btn-dark btn-sm">
+              <div className="col-auto">
+                <span>500</span>
+                <br />
+                <small>commits</small>
+              </div>
+              <div className="col-6 ">
+                <button type="button" class="btn btn-secondary btn-sm">
                   Follow
                 </button>
               </div>
-              <div className="col-6 pt-3">
-                <button type="button" class="btn btn-dark btn-sm">
-                  Message
+              <div className="col-6 ">
+                <button type="button" class="btn btn-secondary btn-sm">
+                  Message&nbsp;&nbsp;
+                  <i class="bi bi-whatsapp" />
                 </button>
               </div>
             </div>
