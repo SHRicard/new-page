@@ -7,50 +7,39 @@ const Menu = () => {
 
   return (
     <div className={theme}>
-      <nav className=" menu navbar navbar-expand-lg ">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            LOGO
-          </a>
-          <button
-            className="botton-toggel-menu  navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon " />
-          </button>
-          <div
-            className=" collapse navbar-collapse"
-            id="navbarSupportedContent"
-          >
-            <ul
-              className="navbar-nav m-auto  mb-lg-0
-            "
-            >
-              <li className="nav-item ">
-                <a className="nav-link active  " aria-current="page" href="#">
+      <div className="container-fluid menu">
+        <div className="row pt-2 pb-2 ">
+          <div className="col-2 d-flex">
+            <div className="logo ">
+              <small className="mx-5 fs-3">
+                <small className="logoR">{"RR"}</small>
+                {"code"}
+              </small>
+            </div>
+          </div>
+
+          <div className="col ">
+            <ul class="nav justify-content-end d-flex">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Contactos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
                   Sobre Mi
                 </a>
               </li>
-              <li className="">
-                <a className="nav-link" href="#">
-                  Contactame
-                </a>
-              </li>
-              <li className="nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle"
                   href="#"
-                  id="navbarDropdown"
+                  id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -58,59 +47,69 @@ const Menu = () => {
                   Proyectos
                 </a>
                 <ul
-                  className="select dropdown-menu"
-                  aria-labelledby="navbarDropdown"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Pokemon
+                    <a class="dropdown-item" href="#">
+                      Pokemon Api
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item " href="#">
-                      Pais
+                    <a class="dropdown-item" href="#">
+                      Pais Api
                     </a>
                   </li>
                   <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      E-Commerce
+                    <a class="dropdown-item" href="#">
+                      Ecommer
                     </a>
                   </li>
                 </ul>
               </li>
             </ul>
-
-            <select className="font-Roboto">
-              <option>ES</option>
-              <option>EN</option>
+          </div>
+          <div className="col-2 d-flex ">
+            <select
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
             </select>
-
-            <button
-              onClick={haldleTheme}
-              id="theme-Sun"
-              value="theme-Sun"
-              name="theme"
-              type="button"
-              class="btn btn-light"
-            >
-              Light
-            </button>
-            <button
-              name="theme"
-              onClick={haldleTheme}
-              id="theme-Moon"
-              value="theme-Moon"
-              type="button"
-              class="btn btn-dark"
-            >
-              Dark
-            </button>
+          </div>
+          <div className="col-2 d-flex">
+            <div className="row">
+              <div className="col-auto">
+                <button
+                  onClick={haldleTheme}
+                  id="theme-Sun"
+                  value="theme-Sun"
+                  name="theme"
+                  type="button"
+                  class="btn btn-light"
+                >
+                  Light
+                </button>
+              </div>
+              <div className="col-auto mx-3">
+                <button
+                  name="theme"
+                  onClick={haldleTheme}
+                  id="theme-Moon"
+                  value="theme-Moon"
+                  type="button"
+                  class="btn btn-dark"
+                >
+                  Dark
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
   );
 };

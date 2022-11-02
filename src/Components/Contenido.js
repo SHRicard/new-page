@@ -7,12 +7,17 @@ const Contenido = () => {
 
   return (
     <div className={theme}>
-      <div className="container-fluid pt-5">
+      <div className="container-fluid pt-2">
         <div className=" row">
-          <div className="col-auto ">
+          <div className="col-auto pt-5 ">
             <Perfil />
           </div>
-          <div className="col bg-danger"></div>
+
+          <div className="col bg-danger mx-2 ">
+            <div className="row">
+              <div className="col bg-danger  "></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

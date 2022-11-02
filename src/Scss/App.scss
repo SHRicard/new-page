@@ -1,27 +1,30 @@
 :root{
    --background-sum:#ffffff;
-   --two-menu-background-sum:#dfd6d6c0;
-   --frist-color-text-sum : #000;
+   --two-background-sum:#f3f2ef;
+   --frist-color-text-sum : #191919;
    --two-color-text-sum : rgb(51, 187, 178);
 
    
-   --background-dark:#000;
-   --frist-color-text-dark:#ffffff;
+   --background-dark:#000000;
+   --two-background-dark:#1d2226;
+   --tree-background-dark:#474139;
+   --frist-color-text-dark:#e9e9ea;
    --two-color-text-dark :  rebeccapurple;
+   --tree-color-text-dark : #6bacec;
+
    
-    
+
+   --font-Racing-special:'Racing Sans One', cursive;
+   --font-Ceviche-special: 'Ceviche One', cursive;
+   --font-Roboto-all:'Roboto', sans-serif;
 }
-.font-Racing { font-family: 'Racing Sans One', cursive};
-.font-Ceviche {font-family: 'Ceviche One', cursive};
-.font-Roboto { font-family: 'Roboto', sans-serif;
-font-weight: 600
 
 
 
 
 
 
-};
+
 // .card{
 //        position: relative;
 //        width: 310px;
@@ -98,29 +101,42 @@ font-weight: 600
     color:	var(--frist-color-text-sum);
     font-weight: 600;
     .entrada{
-              .front{font-family: 'Racing Sans One', cursive;}
-              .front2 {font-family: 'Ceviche One', cursive;
+              .front{font-family: var( --font-Racing-special)}
+              .front2 {
+                font-family: var( --font-Ceviche-special);
                  color: var(--two-color-text-sum);}
             }
 
     .menu{
-        background: var( --two-menu-background-sum);
-        ul li a{
-            color :var(--frist-color-text-sum);
-          
-        }
-            .select {color:var(--two-menu-background-sum);
-           font-family: 'Roboto', sans-serif;
-        }
-            .active{color:  rebeccapurple !important}
-            .botton-toggel-menu{
-                                border-color: #fff ;
-                                background: rebeccapurple;
-                                }
-       
-    }
+                background: var( --two-background-sum);
+            .logo{
+                 font-family:var(--font-Ceviche-special);
+                 color: var(--two-color-text-sum);
+                 cursor: pointer;
+                 .logoR{color:var(--two-color-text-dark)
+                    
+                       }
+                }
+         }
+    .container-card{
 
+              .card{
+                    background: var(--two-background-sum);
+                   
+                    .boxImg{
+                        position: relative;
+                        top: -40px;
+                        width: 180px;
+                        height: 180px;  
+                        background: rgb(15, 12, 12); 
+                        box-shadow: 0 15px 50px var(--tree-background-dark);
+                            }
+                    .dato{
 
+                    }
+                }
+   
+                }
 
     }
 
@@ -153,12 +169,12 @@ font-weight: 600
              // Css Entrada end
             // Css Menu start
     .menu{
-           background:#393636;
+           background:var(--two-background-dark);
            ul li a{
            color: #fff;
            font-family: 'Roboto', sans-serif;
            font-weight: 600;}
-           .select {background:#393636;}
+           .select {background:var(--two-background-dark);}
            .active{color:  rebeccapurple !important}
            .botton-toggel-menu{
                                border-color: #fff ;
@@ -169,18 +185,11 @@ font-weight: 600
              // Css Menu End
             //Css Card Start
     .container-card{
-            // width: 350px;
-            // height: 380px;
-            // background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // position: relative;
-            // top: 50px;
+   
             .card{
                 width: 300px;
                 height: 350px;  
-                background:#515050c5;
+                background:var(--two-background-dark);
                 display: flex;
                 align-items: center;
             
@@ -190,7 +199,7 @@ font-weight: 600
                     width: 180px;
                     height: 180px;  
                     background: rgb(15, 12, 12); 
-                    box-shadow: 0 15px 50px rgba(232, 232, 232, 0.35);
+                    box-shadow: 0 15px 50px var(--tree-background-dark);
                 }
                 .titleName{
                     font-family: 'Ceviche One', cursive;
