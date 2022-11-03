@@ -12,40 +12,49 @@ const Perfil = () => {
           <div className="boxImg">
             <img src="..." className=" rounded float-start" alt="..." />
           </div>
-          <div className="dato">
+          <div className="datos">
             <div
               className="row text-center d-flex
                 justify-content-center"
             >
-              <div className="col-12 text-center  ">
+              <div className="col-12 text-center pb-3 ">
                 <h3 className="titleName fs-2"> Ricardo</h3>
-                <small>Desarrollador Back-End / Front-End</small>
+                <small className="dato ">
+                  Desarrollador Back-End / Front-End
+                </small>
               </div>
-              <div className="col-auto ">
-                <span>500</span>
-                <br />
-                <small>commits</small>
+              <div className="col-12 pb-4">
+                <div className="row d-flex justify-content-center">
+                  <div className="col-auto gitDatos  ">
+                    500 <br />
+                    <small>Commits</small>
+                  </div>
+                  <div className="col-auto gitDatos">
+                    50 <br />
+                    <small>Repositorios</small>
+                  </div>
+                  <div className="col-auto gitDatos ">
+                    <small>5</small>
+                    <br />
+                    <small>Proyectos</small>
+                  </div>
+                </div>
               </div>
-              <div className="col-auto">
-                <span>500</span>
-                <br />
-                <small>commits</small>
-              </div>
-              <div className="col-auto">
-                <span>500</span>
-                <br />
-                <small>commits</small>
-              </div>
-              <div className="col-6 ">
-                <button type="button" class="btn btn-secondary btn-sm">
-                  Follow
-                </button>
-              </div>
-              <div className="col-6 ">
-                <button type="button" class="btn btn-secondary btn-sm">
-                  Message&nbsp;&nbsp;
-                  <i class="bi bi-whatsapp" />
-                </button>
+              <div className=" grupoButton">
+                <div className="row">
+                  <div className="col-6  ">
+                    <button type="button" className="btn btn  btn-sm">
+                      <small> Follow</small>
+                    </button>
+                  </div>
+                  <div className="col-6 ">
+                    <button type="button" className="btn btn btn-sm">
+                      <small>Message</small>
+                      &nbsp;&nbsp;
+                      <i className="bi bi-whatsapp" />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

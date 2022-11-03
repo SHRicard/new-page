@@ -113,15 +113,19 @@
                  font-family:var(--font-Ceviche-special);
                  color: var(--two-color-text-sum);
                  cursor: pointer;
-                 .logoR{color:var(--two-color-text-dark)
-                    
+                 .logoR{
+                        color:var(--two-color-text-dark)
                        }
                 }
          }
     .container-card{
 
               .card{
-                    background: var(--two-background-sum);
+                   width: 300px;
+                   height: 380px;  
+                   display: flex;
+                   align-items: center;
+                   background: var(--two-background-sum);
                    
                     .boxImg{
                         position: relative;
@@ -130,9 +134,38 @@
                         height: 180px;  
                         background: rgb(15, 12, 12); 
                         box-shadow: 0 15px 50px var(--tree-background-dark);
+                       
                             }
-                    .dato{
+                    .datos{
+                        .titleName{
+                            font-family: 'Ceviche One', cursive;
+                            color:  rebeccapurple
+                                  }
+                       .dato{
+                             color: var( --two-color-text-sum);
+                             font-weight: var( --font-Roboto-all);
+                             }
+                        .gitDatos{
+                            color: var( --frist-color-text-sum);
+                            opacity: 0.5; 
+                            font-weight: 900 !important;
+                            font-size: 12px;
+                        }
+                        .grupoButton{
+                              .btn{
+                                  background: var( --background-dark);
+                                  small{
+                                    color:var(--frist-color-text-dark);
+                                    font-family: var( --font-Roboto-all);
+                                    font-size: 13px;
+                                    opacity: 0.5; 
 
+                                }
+                                     i{
+                                        color: #0bbb20;
+                                     }
+                                }
+                        }
                     }
                 }
    
@@ -155,63 +188,63 @@
 
 
 
-.theme-Moon{
-    background:var(--background-dark);
-     color:var( --frist-color-text-dark);
-      // Css Entrada start
-    .entrada{
-            .front{
-                    font-family: 'Racing Sans One', cursive;}
-            .front2 {
-                     font-family: 'Ceviche One', cursive;
-                     color:  rebeccapurple}
-            }
-             // Css Entrada end
-            // Css Menu start
-    .menu{
-           background:var(--two-background-dark);
-           ul li a{
-           color: #fff;
-           font-family: 'Roboto', sans-serif;
-           font-weight: 600;}
-           .select {background:var(--two-background-dark);}
-           .active{color:  rebeccapurple !important}
-           .botton-toggel-menu{
-                               border-color: #fff ;
-                               background: rebeccapurple;
-                               }
-           }
-}
-             // Css Menu End
-            //Css Card Start
-    .container-card{
+// .theme-Moon{
+//     background:var(--background-dark);
+//      color:var( --frist-color-text-dark);
+//       // Css Entrada start
+//     .entrada{
+//             .front{
+//                     font-family: 'Racing Sans One', cursive;}
+//             .front2 {
+//                      font-family: 'Ceviche One', cursive;
+//                      color:  rebeccapurple}
+//             }
+//              // Css Entrada end
+//             // Css Menu start
+//     .menu{
+//            background:var(--two-background-dark);
+//            ul li a{
+//            color: #fff;
+//            font-family: 'Roboto', sans-serif;
+//            font-weight: 600;}
+//            .select {background:var(--two-background-dark);}
+//            .active{color:  rebeccapurple !important}
+//            .botton-toggel-menu{
+//                                border-color: #fff ;
+//                                background: rebeccapurple;
+//                                }
+//            }
+// }
+//              // Css Menu End
+//             //Css Card Start
+//     .container-card{
    
-            .card{
-                width: 300px;
-                height: 350px;  
-                background:var(--two-background-dark);
-                display: flex;
-                align-items: center;
+//             .card{
+//                 width: 300px;
+//                 height: 380px;  
+//                 display: flex;
+//                 align-items: center;
+//                 background:var(--two-background-dark);
             
-                .boxImg{
-                position: relative;
-                top: -40px;
-                    width: 180px;
-                    height: 180px;  
-                    background: rgb(15, 12, 12); 
-                    box-shadow: 0 15px 50px var(--tree-background-dark);
-                }
-                .titleName{
-                    font-family: 'Ceviche One', cursive;
-                    color:  rebeccapurple
+//                 .boxImg{
+//                     position: relative;
+//                     top: -40px;
+//                     width: 180px;
+//                     height: 180px;  
+//                     background: rgb(15, 12, 12); 
+//                     box-shadow: 0 15px 50px var(--tree-background-dark);
+//                 }
+//                 .titleName{
+//                     font-family: 'Ceviche One', cursive;
+//                     color:  rebeccapurple
                 
-                }
+//                 }
 
 
-            }
+//             }
 
 
 
 
-         }   
+//          }   
 

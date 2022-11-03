@@ -5,36 +5,38 @@ const Footer = () => {
 
   return (
     <div className={theme}>
-      <div className="row d-flex justify-content-center">
-        <div className="col-4 text-center font-Roboto">
-          <h3>Logo</h3>
-          <p>Parrafo</p>
-          <br />
-          <br />
-          <br />
-          <h5>Seguime en mis Redes:</h5>
-          <small>icons</small>
+      <div className="footer">
+        <div className="row">
+          <div className="col-4 ">
+            <div className="logo ">
+              <small className="mx-5 fs-3">
+                <small className="logoR">{"RR"}</small>
+                {"code"}
+              </small>
+            </div>
+            <small>
+              Dame la oportunidad, aun que sea un desarrollador junior me sobran
+              ganas de aprender , se que puedo aportar mucho. Dame ese desafio
+              que estoy buscando.&nbsp;&nbsp;&nbsp;&nbsp;{"=)"}
+            </small>
+            <br />
+            <small>
+              Entérate de todas mis proyectos en mi Redes y de paso Seguime :
+            </small>
+            <div className="gropoIcons">
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-whatsapp"></i>
+            </div>
+          </div>
+          <div className="col-4 bg-dark">asd</div>
+          <div className="col-4 bg-dark">asd</div>
         </div>
-        <div className="col-4 text-center font-Roboto">
-          <h3 className="font-Roboto">Tecnologias</h3>
-          <br />
-          <small>JavaScript</small>
-          <br />
-          <small>React</small>
-          <br />
-          <small>NodeJs</small>
-          <br />
-          <small>CSS</small>
-          <br />
-          <small>HTML</small>
-          <br />
-          <small>Sass</small>
-        </div>
-        <div className="col-4 text-center font-Roboto">
-          <small>Certificadores oficiales en tecnologías</small>
-        </div>
-        <div className="col-12 bg-primary pt-3 pb-3 text-center font-Roboto">
-          De Argentina para todo el Mundo
+        <div className="row">
+          <div className="col-12 text-center bg-primary pb-2 pt-2">
+            De Argentina Para todo el Mundo!!
+          </div>
         </div>
       </div>
     </div>
