@@ -3,7 +3,7 @@
    --two-background-sum:#f3f2ef;
    --frist-color-text-sum : #191919;
    --two-color-text-sum : rgb(51, 187, 178);
-
+   --color-shadow-sum : #6bacec;
    
    --background-dark:#000000;
    --two-background-dark:#1d2226;
@@ -11,8 +11,9 @@
    --frist-color-text-dark:#e9e9ea;
    --two-color-text-dark :  rebeccapurple;
    --tree-color-text-dark : #6bacec;
-
-   
+   --color-shadow-dark : rebeccapurple;
+   --color-hover-sum : rgba(13, 130, 122, 0.782);
+   --color-hover-dark : rgba(88, 40, 136, 0.772);
 
    --font-Racing-special:'Racing Sans One', cursive;
    --font-Ceviche-special: 'Ceviche One', cursive;
@@ -41,6 +42,99 @@
 
 }
 
+.MenuTwo{
+         .navigation{
+            position: relative;
+            width: 400px;
+            height: 70px;
+            background: #0e76a8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+         }
+         .navigation ul{
+            display: flex;
+            width: 350px;
+         }
+         .navigation ul li{
+            position: relative;
+            list-style: none;
+            width: 70px;
+            height: 70px;
+            z-index: 1;
+         }
+         .navigation ul li a{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+         }
+         .navigation ul li a .icon{
+            position: relative;
+            display: block;
+            
+            line-height: 75px;
+            font-size: 1.5em;
+            text-align: center;
+            transition: 0.5s;
+            color:var(--frist-color-text-sum)
+         }
+         .navigation ul li.active a .icon{
+            transform: translateY(-30px);
+         }
+         .navigation ul li a .text{
+            position: absolute;
+            color: var(--frist-color-text-sum);
+            font-weight: 400;
+            font-size: 0.75em;
+            letter-spacing: 0.05em;
+            transition: 0.5s;
+            opacity: 0;
+            transform: translateY(20px);
+         }
+         .navigation ul li.active a .text{
+            opacity: 1;
+            transform: translateY(10px);
+
+             
+         }
+         .indicador{
+            position: absolute;
+            top: -50%;
+            width: 70px;
+            height: 70px;
+            background: #21e268;
+            border-radius: 50%;
+            border: 6px solid var(--frist-color-text-dark);
+            transition: 0.5s;
+
+         }
+         .indicador::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -22px;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border-top-right-radius:20px ;
+            box-shadow: 0px -10px 0 0 var(--two-background-sum);
+         }
+
+}
+
+
+
+
+
+
+
+
 .theme-Sun{
     background:var(--background-sum);
     color:	var(--frist-color-text-sum);
@@ -53,16 +147,33 @@
             }
 
     .menu{
-                background: var( --two-background-sum);
+            background: var( --two-background-sum);
             .logo{
-                 font-family:var(--font-Ceviche-special);
-                 color: var(--two-color-text-sum);
-                 cursor: pointer;
-                 .logoR{
-                        color:var(--two-color-text-dark)
-                       }
+                    font-family:var(--font-Ceviche-special);
+                    color: var(--two-color-text-sum);
+                    cursor: pointer;
+                .logoR{
+                       color:var(--two-color-text-dark)
+                      }
                 }
+            .grup-list li a{
+                       font-family: var(--font-Roboto-all);
+                       color:var(--frist-color-text-sum)
+
+            }
+        
+
          }
+
+
+
+
+
+
+
+
+
+
     .container-card{
 
               .card{
@@ -77,13 +188,14 @@
                         top: -40px;
                         width: 180px;
                         height: 180px;  
-                        background: rgb(15, 12, 12); 
-                        box-shadow: 0 15px 50px var(--tree-background-dark);
+                        background: rgb(15, 12, 12);
+                        box-shadow: 0 15px 50px var( --color-shadow-sum);
+
                        
                             }
                     .datos{
                         .titleName{
-                            font-family: 'Ceviche One', cursive;
+                            font-family: var(--font-Ceviche-special);
                             color:  rebeccapurple
                                   }
                        .dato{
@@ -98,7 +210,7 @@
                         }
                         .grupoButton{
                               .btn{
-                                  background: var( --background-dark);
+                                  background: var( --two-background-dark);
                                   small{
                                     color:var(--frist-color-text-dark);
                                     font-family: var( --font-Roboto-all);
@@ -109,7 +221,12 @@
                                 .bi-whatsapp{
                                     color:var(--color-icons-whatsapp);
                                             }
+                                       
+                                } 
+                                .btn:hover{
+                                    background: var( --color-hover-sum );
                                 }
+                                
                         }
                     }
                 }
@@ -117,6 +234,7 @@
                 }
 
         .footer{
+            
                 .logo{
              
                      color:var( --two-color-text-sum);
@@ -134,7 +252,9 @@
                         font-size: 20px;
                         .bi-youtube{
                             color:var(--color-icons-youtube);
-                            cursor: pointer;
+                            background:var(--background-sum);
+                            font-weight: 600;
+                             cursor: pointer;
                                    }
                         .bi-linkedin{
                             color:var(--color-icons-linkedin);
@@ -150,7 +270,7 @@
                                     }
                                 }
                 .box-color-tec{
-                        .bi-check2{
+                        .bi-che --redux-colorck2{
                             color:var(--color-icons-whatsapp);
                             font-size: 15px;
                         }
@@ -174,115 +294,260 @@
                                   }
                         .nodeJs{
                             background: var(--nodeJS-color);
-                        }
+                               }
                         .css{
                             background: var(--css-color);
                              }
                         .html{
                             background: var(--html-color);
-                        }
+                             }
                         .bootstrap{
                             background: var(--bootstrap-color);
-                        }
+                                  }
                         .sass{
                             background: var(--sass-color);
-                        }
+                             }
                         .apredis{
                             color: var(--two-color-text-dark);
                                  }
                         .aprediendo{
                           
                             background: var( --aprediendo-color);
-                        }
+                                   }
+                        .git{
+                              background: var( --redux-color);
+                            }
                         .bi-infinity{
                             color:var( --tree-color-text-dark);
                             font-size: 15px;
-                        }
+                                    }
 
-                }
+                    }
 
                 .title-tec{
                     font-family: var(--font-Roboto-all);
                     color:var(--two-color-text-sum);
                     font-weight: 600;
-                     
-                }
-                            }
+                         }
+
+                .btn{
+                        background: var( --background-dark);
+                        small{
+                              color:var(--frist-color-text-dark);
+                              font-family: var( --font-Roboto-all);
+                              font-size: 13px;}
+                    }
+                .Arg{
+                    i{
+                        color: rgba(255, 0, 0, 0.886);
+                    }
+                        font-family: var(--font-Roboto-all);
+                        background: var(--two-background-sum);
+                    }                
+            }
 
     }
 
 
+.theme-Moon{
+    background:var(--background-dark);
+    color:	var(--frist-color-text-dark);
+    font-weight: 600;
+    .entrada{
+              .front{font-family: var( --font-Racing-special)}
+              .front2 {
+                font-family: var( --font-Ceviche-special);
+                 color: var(--two-color-text-dark);}
+            }
 
+    .menu{
+            background: var( --two-background-dark);
+            .logo{
+                    font-family:var(--font-Ceviche-special);
+                    color: var(--two-color-text-dark);
+                    cursor: pointer;
+                .logoR{
+                       color:var(--two-color-text-sum)
+                      }
+                }
+            .grup-list li a{
+                       font-family: var(--font-Roboto-all);
+                       color:var(--frist-color-text-dark);
+                       background: var(--two-background-dark);
+                      
 
+            }
+        
 
+         }
+    .container-card{
 
-// .card{
-//     width: 310px;
-//    height: 350px
-//0.1rem solid rgba(0,0,0,0.6)
-// }
+              .card{
+                   width: 300px;
+                   height: 380px;  
+                   display: flex;
+                   align-items: center;
+                   background: var(--two-background-dark);
+                   
+                    .boxImg{
+                        position: relative;
+                        top: -40px;
+                        width: 180px;
+                        height: 180px;  
+                        background: rgb(15, 12, 12); 
+                        box-shadow: 0 15px 50px var(--color-shadow-dark);
+                       
+                            }
+                    .datos{
+                        .titleName{
+                            font-family: var(--font-Ceviche-special);
+                            color:  rebeccapurple
+                                  }
+                       .dato{
+                             color: var( --two-color-text-sum);
+                             font-weight: var( --font-Roboto-all);
+                             }
+                        .gitDatos{
+                            color: var( --frist-color-text-dark);
+                            opacity: 0.5; 
+                            font-weight: 900 !important;
+                            font-size: 12px;
+                        }
+                        .grupoButton{
+                              .btn{
+                                  background: var( --background-dark);
+                                  small{
+                                    color:var(--frist-color-text-dark);
+                                    font-family: var( --font-Roboto-all);
+                                    font-size: 13px;
+                                  
 
-
-
-
-
-// .theme-Moon{
-//     background:var(--background-dark);
-//      color:var( --frist-color-text-dark);
-//       // Css Entrada start
-//     .entrada{
-//             .front{
-//                     font-family: 'Racing Sans One', cursive;}
-//             .front2 {
-//                      font-family: 'Ceviche One', cursive;
-//                      color:  rebeccapurple}
-//             }
-//              // Css Entrada end
-//             // Css Menu start
-//     .menu{
-//            background:var(--two-background-dark);
-//            ul li a{
-//            color: #fff;
-//            font-family: 'Roboto', sans-serif;
-//            font-weight: 600;}
-//            .select {background:var(--two-background-dark);}
-//            .active{color:  rebeccapurple !important}
-//            .botton-toggel-menu{
-//                                border-color: #fff ;
-//                                background: rebeccapurple;
-//                                }
-//            }
-// }
-//              // Css Menu End
-//             //Css Card Start
-//     .container-card{
+                                }
+                                .bi-whatsapp{
+                                    color:var(--color-icons-whatsapp);
+                                            }
+                                }
+                                .btn:hover{
+                                    background: var(--color-hover-dark);
+                                }
+                        }
+                    }
+                }
    
-//             .card{
-//                 width: 300px;
-//                 height: 380px;  
-//                 display: flex;
-//                 align-items: center;
-//                 background:var(--two-background-dark);
+                }
+
+        .footer{
             
-//                 .boxImg{
-//                     position: relative;
-//                     top: -40px;
-//                     width: 180px;
-//                     height: 180px;  
-//                     background: rgb(15, 12, 12); 
-//                     box-shadow: 0 15px 50px var(--tree-background-dark);
-//                 }
-//                 .titleName{
-//                     font-family: 'Ceviche One', cursive;
-//                     color:  rebeccapurple
-                
-//                 }
+                .logo{
+             
+                     color:var( --two-color-text-sum);
+                     font-family:var(--font-Ceviche-special);
+                        .logoR{
+                        color:var(--two-color-text-dark)
+                               }
+                        }
+                .parrafo{
+                        font-family: var(--font-Roboto-all);
+                        font-size: 12px;
+                        opacity: 0.5; 
+                            }
+                .gropoIcons{
+                        font-size: 20px;
+                        .bi-youtube{
+                            color:var(--color-icons-youtube);
+                            background:var(--background-dark);
+                            font-weight: 600;
+                             cursor: pointer;
+                                   }
+                        .bi-linkedin{
+                            color:var(--color-icons-linkedin);
+                            cursor: pointer;
+                                    }
+                        .bi-whatsapp{
+                            color:var(--color-icons-whatsapp);
+                            cursor: pointer;
+                                    }
+                        .bi-facebook{
+                            color:var(--color-icons-facebook);
+                            cursor: pointer;
+                                    }
+                                }
+                .box-color-tec{
+                        .bi-che --redux-colorck2{
+                            color:var(--color-icons-whatsapp);
+                            font-size: 15px;
+                        }
+                        .javaScript{
+                            background: var(--javascript-color);
+                                   }
+                        .sequelize{
+                            background:var(--sequelize-color);
+                                  }
+                        .redux{
+                            background:var(--redux-color);
+                                   } 
+                        .react{
+                            background:var(--react-color);
+                                   }
+                        .react-hooks{
+                             background: var(--react-hooks-color);
+                                  }
+                        .posgreSQL{
+                            background: var(--posgreSQL-color);
+                                  }
+                        .nodeJs{
+                            background: var(--nodeJS-color);
+                               }
+                        .css{
+                            background: var(--css-color);
+                             }
+                        .html{
+                            background: var(--html-color);
+                             }
+                        .bootstrap{
+                            background: var(--bootstrap-color);
+                                  }
+                        .sass{
+                            background: var(--sass-color);
+                             }
+                        .apredis{
+                            color: var(--two-color-text-dark);
+                                 }
+                        .aprediendo{
+                          
+                            background: var( --aprediendo-color);
+                                   }
+                        .git{
+                              background: var( --redux-color);
+                            }
+                        .bi-infinity{
+                            color:var( --tree-color-text-dark);
+                            font-size: 15px;
+                                    }
 
+                    }
 
-//             }
+                .title-tec{
+                    font-family: var(--font-Roboto-all);
+                    color:var(--two-color-text-sum);
+                    font-weight: 600;
+                         }
 
+                .btn{
+                        background: var( --background-dark);
+                        small{
+                              color:var(--frist-color-text-dark);
+                              font-family: var( --font-Roboto-all);
+                              font-size: 13px;}
+                    }
+                .Arg{
+                    i{
+                        color: rgba(255, 0, 0, 0.886);
+                    }
+                        font-family: var(--font-Roboto-all);
+                        background: var(--two-background-dark);
+                    }                
+            }
 
-
-
-//          }   
+}
 

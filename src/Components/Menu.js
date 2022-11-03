@@ -19,7 +19,7 @@ const Menu = () => {
           </div>
 
           <div className="col ">
-            <ul class="nav justify-content-end d-flex">
+            <ul class="nav justify-content-end d-flex grup-list">
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#">
                   Home
