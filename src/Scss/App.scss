@@ -17,84 +17,29 @@
    --font-Racing-special:'Racing Sans One', cursive;
    --font-Ceviche-special: 'Ceviche One', cursive;
    --font-Roboto-all:'Roboto', sans-serif;
+
+
+   --color-icons-whatsapp:	#25D366;
+   --color-icons-facebook: #3b5998;
+   --color-icons-linkedin: #0e76a8;
+   --color-icons-youtube: #b2071d;
+
+
+
+   --javascript-color:#ffe32c;
+   --sequelize-color:#4c71c1;
+   --redux-color:rgba(30, 255, 0, 0.942);
+   --react-color:#08ffe2;
+   --react-hooks-color:#fb0c74;
+   --posgreSQL-color:#08fded;
+   --nodeJS-color:#fffb00;
+   --css-color:#21e268;
+   --html-color: rgb(255, 0, 0);
+   --bootstrap-color: rgb(183, 8, 241);
+   --sass-color: rgba(255, 0, 153, 0.863);
+   --aprediendo-color: rgba(0, 255, 145, 0.754);
+
 }
-
-
-
-
-
-
-
-// .card{
-//        position: relative;
-//        width: 310px;
-//        height: 350px !important;
-//        background: rgb(0, 0, 0);
-//        border-radius: 20px;
-//        box-shadow: 0 35px 80px(0, 0, 0 ,0.15);
-    
-//     .imgBox{
-//        position: absolute;
-//        top: -40px;
-//        width: 150px;
-//        height: 150px;
-//        background: #fff;
-//        border-radius: 20px;
-//        box-shadow: 0 15px 50px rgba(0 ,0,0,0.35); 
-//     }
-//     img{
-//         width: 150px;
-//         height: 188px;  
-//     }
-//     .content{
-//         position: absolute;
-//         height: 100%;
-//         width: 100%;
-//         display: flex;
-//         justify-content: center;
-//         align-items: flex-end;
-//     }
-//     .details{
-//         padding: 40px;
-//         text-align: center;
-//         width: 100%;
-//         transition: 0.5s;
-//     }
-//     .name{
-//         font-size: 1.25em;
-//         font-weight: 600;
-//         color: rgb(47, 45, 45);
-//         line-height: 1.2em;
-//     }
-//     .web{ 
-//         font-size: 0.75em;
-//         opacity: 0.6;
-//     }
-//     .number{
-//         font-size: 2.5em;
-//     color: rgb(0, 0, 0);
-
-//     }
-//     .data{
-//     display: flex;
-//     justify-content: space-between;
-//     margin: 8px 0;
-//     font-size: 0.6em;
-//     line-height: 1em;
-    
-            
-//     }
-//     .span-opa {
-//         opacity: 0.5; 
-//         font-weight: 400 !important;
-
-
-//     }
-
-// }
-
-
-
 
 .theme-Sun{
     background:var(--background-sum);
@@ -158,18 +103,111 @@
                                     color:var(--frist-color-text-dark);
                                     font-family: var( --font-Roboto-all);
                                     font-size: 13px;
-                                    opacity: 0.5; 
+                                  
 
                                 }
-                                     i{
-                                        color: #0bbb20;
-                                     }
+                                .bi-whatsapp{
+                                    color:var(--color-icons-whatsapp);
+                                            }
                                 }
                         }
                     }
                 }
    
                 }
+
+        .footer{
+                .logo{
+             
+                     color:var( --two-color-text-sum);
+                     font-family:var(--font-Ceviche-special);
+                        .logoR{
+                        color:var(--two-color-text-dark)
+                               }
+                        }
+                .parrafo{
+                        font-family: var(--font-Roboto-all);
+                        font-size: 12px;
+                        opacity: 0.5; 
+                            }
+                .gropoIcons{
+                        font-size: 20px;
+                        .bi-youtube{
+                            color:var(--color-icons-youtube);
+                            cursor: pointer;
+                                   }
+                        .bi-linkedin{
+                            color:var(--color-icons-linkedin);
+                            cursor: pointer;
+                                    }
+                        .bi-whatsapp{
+                            color:var(--color-icons-whatsapp);
+                            cursor: pointer;
+                                    }
+                        .bi-facebook{
+                            color:var(--color-icons-facebook);
+                            cursor: pointer;
+                                    }
+                                }
+                .box-color-tec{
+                        .bi-check2{
+                            color:var(--color-icons-whatsapp);
+                            font-size: 15px;
+                        }
+                        .javaScript{
+                            background: var(--javascript-color);
+                                   }
+                        .sequelize{
+                            background:var(--sequelize-color);
+                                  }
+                        .redux{
+                            background:var(--redux-color);
+                                   } 
+                        .react{
+                            background:var(--react-color);
+                                   }
+                        .react-hooks{
+                             background: var(--react-hooks-color);
+                                  }
+                        .posgreSQL{
+                            background: var(--posgreSQL-color);
+                                  }
+                        .nodeJs{
+                            background: var(--nodeJS-color);
+                        }
+                        .css{
+                            background: var(--css-color);
+                             }
+                        .html{
+                            background: var(--html-color);
+                        }
+                        .bootstrap{
+                            background: var(--bootstrap-color);
+                        }
+                        .sass{
+                            background: var(--sass-color);
+                        }
+                        .apredis{
+                            color: var(--two-color-text-dark);
+                                 }
+                        .aprediendo{
+                          
+                            background: var( --aprediendo-color);
+                        }
+                        .bi-infinity{
+                            color:var( --tree-color-text-dark);
+                            font-size: 15px;
+                        }
+
+                }
+
+                .title-tec{
+                    font-family: var(--font-Roboto-all);
+                    color:var(--two-color-text-sum);
+                    font-weight: 600;
+                     
+                }
+                            }
 
     }
 
