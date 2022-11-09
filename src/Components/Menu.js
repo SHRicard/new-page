@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext from "../Context/ThemeContext.js";
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Menu = () => {
   const { theme, haldleTheme } = useContext(ThemeContext);
@@ -22,17 +22,17 @@ const Menu = () => {
             <ul class="nav justify-content-end d-flex grup-list">
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#">
-                  Home
+                  <Link to="home">Home</Link>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Contactos
+                  <Link to="contactos"> Contactos</Link>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Sobre Mi
+                  <Link to=" sobremi"> Sobre Mi</Link>
                 </a>
               </li>
               <li class="nav-item dropdown">
@@ -44,7 +44,7 @@ const Menu = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Proyectos
+                  <Link to="proyectos">Proyectos</Link>
                 </a>
                 <ul
                   class="dropdown-menu"

@@ -7,7 +7,7 @@ const Perfil = () => {
 
   return (
     <div className={theme}>
-      <div className="container-card pt-2">
+      <div className="container-card pt-5">
         <div className="card">
           <div className="boxImg">
             <img src="..." className=" rounded float-start" alt="..." />

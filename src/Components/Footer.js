@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={theme}>
       <div className="footer">
-        <div className="row">
+        <div className="row ">
           <div className="col-4 text-center">
             <div className="logo pt-3 ">
               <small className="mx-5 fs-3">
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-auto pt-3  text-center">
-            <div className="row">
+            <div className="row ">
               <div className="col-12 pb-2 ">
                 <h2 className="title-tec">Tecnologías</h2>
               </div>
@@ -105,7 +105,7 @@ const Footer = () => {
                   <small className="html">&nbsp;&nbsp;</small>
                   &nbsp;<small>Html</small>
                   &nbsp;&nbsp;
-                  <i class="bi bi-check2" />
+                  <i class="bi bi-chp-0 m-0eck2" />
                   <br />
                   <small className="posgreSQL">&nbsp;&nbsp;</small>
                   &nbsp;<small>PosgreSQL</small>
@@ -142,8 +142,8 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12 text-center Arg pb-3 pt-3">
+        <div className="row p-0 m-0">
+          <div className="col-12 text-center Arg  pb-3 pt-3">
             <small>
               De Argentina con&nbsp;
               <i class="bi bi-suit-heart-fill" />
